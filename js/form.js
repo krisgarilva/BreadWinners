@@ -16,10 +16,3 @@ document.querySelector("form").addEventListener("submit", function(event) {
     }
 
 });
-
-var submitButton = document.querySelector("button");
-submitButton.addEventListener("click", function() {
-    var name = document.querySelector("[name='name']").value;
-
-
-});
