@@ -11,8 +11,11 @@ document.querySelector("form").addEventListener("submit", function(event) {
         alert("Name is required");
         event.preventDefault();
     }
+    else {
+      alert("Form submitted!");
+    }
 
-    alert("Form submitted!");
+
 });
 
 var submitButton = document.querySelector("button");
