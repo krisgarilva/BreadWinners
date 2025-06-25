@@ -7,6 +7,10 @@ document.querySelector("form").addEventListener("submit", function(event) {
         alert("Invalid email");
         event.preventDefault();
     }
+    else if (name === "") {
+        alert("Name is required");
+        event.preventDefault();
+    }
 
     alert("Form submitted!");
 });
@@ -15,7 +19,5 @@ var submitButton = document.querySelector("button");
 submitButton.addEventListener("click", function() {
     var name = document.querySelector("[name='name']").value;
 
-    if (name === "") {
-        alert("Name is required");
-    }
+
 });
