@@ -5,6 +5,12 @@ document.querySelector("form").addEventListener("submit", function(event) {
 
     if (email.indexOf('@') === -1) {
         alert("Invalid email");
+        event.preventDefault();
+    }
+
+    else if (name === "") {
+      alert("Name is required");
+
     }
 
     alert("Form submitted!");
@@ -13,7 +19,5 @@ document.querySelector("form").addEventListener("submit", function(event) {
 var submitButton = document.querySelector("button");
 submitButton.addEventListener("click", function() {
     var name = document.querySelector("[name='name']").value;
-    if (name === "") {
-        alert("Name is required");
-    }
+
 });
