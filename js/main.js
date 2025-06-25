@@ -1,6 +1,10 @@
 // Buggy main.js
-documment.getElementById("title").innerText = "Welcome";
+document.getElementById("title").innerText = "Welcome";
 
 document.getElementById("menuBtn").addEventListener("click", toggleMenu);
 
-// toggleMenu is not defined
+// Define the toggleMenu function
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
